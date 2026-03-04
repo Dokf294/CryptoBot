@@ -1,5 +1,5 @@
 :root{ 
     /* padding */
     --layout-side-padding-min: 3rem;
-    --side-padding: max(var(--layout-side-padding-min), calc(50vw - 1000px + 1rem));
+    --side-padding: max(var(--layout-side-padding-min), calc(50vw - 850px + 1rem));
 }

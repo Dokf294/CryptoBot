@@ -33,12 +33,20 @@
 <section class="initialize">
   <div class="video">
     <div class="video__frame">
-      <video src="/assets/video/videobg.mp4" autoplay muted loop playsinline preload="auto"></video>
+      <video id="bgVideo" src="/assets/video/videobg.mp4" autoplay muted loop playsinline preload="auto"></video>
+
+      <script>
+        const video = document.getElementById("bgVideo");
+
+        video.addEventListener("loadedmetadata", () => {
+          video.playbackRate = 0.5;
+        });
+      </script>
     </div>
   </div>
   <div class="initialize-greet">
     <div class="greet-header">
-      <span>Start earning money </span> with CryptoBot
+      <span>Start earning money </span> <span>with CryptoBot</span>
     </div>
     <div class="greet-command">
       <div class="command-console">

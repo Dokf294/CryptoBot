@@ -2,7 +2,7 @@
 
 .initialize {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     font-family: "Inter", sans-serif;
     height: 75vh;
     min-height: 1100px;
@@ -12,8 +12,9 @@
         z-index: 1;
         //background-color: red;
         @include m.flex(center, center, column);
-        padding-right: 2rem;
+        padding-right: 1rem;
         transform: translateY(80px);
+        translate: clamp(10px, 2.5vw, 100px);
     }
 
     &-greet {
@@ -29,10 +30,11 @@
 .greet-header {
     color: #fff;
     font-size: clamp(1rem, 4vw, 4.7rem);
-
+    
     span {
         white-space: nowrap;
-    }
+    } 
+
 }
 
 .greet-command {
@@ -93,7 +95,7 @@
     height: 100%;
 
     img {
-        max-width: clamp(600px, 52vw, 1020px);
+        max-width: clamp(600px, 52vw, 920px);
         height: auto;
         display: block;
         width: 100%;
@@ -107,6 +109,7 @@
     //background-color: red;
     place-items: center;
     transform: translateY(-30px);
+    translate: clamp(10px, 2vw, 80px);
 
     .footage-pad {
         display: grid;
@@ -182,7 +185,6 @@
         place-self: center;
         text-align: center;
 
-        background-color: red;
 
         span {
             white-space: normal;
