@@ -1,0 +1,81 @@
+@use 'mixins' as m;
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 300vh;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+#layout {
+    --grid-opacity: 0.20;
+    position: relative;
+    min-height: 300vh;
+    background-color: #000;
+    padding: 0 var(--side-padding);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 2%;
+        bottom: 0;
+        left: var(--side-padding);
+        right: var(--side-padding);
+        pointer-events: none;
+
+        border-left: 1px solid rgba(255, 255, 255, var(--grid-opacity));
+        border-right: 1px solid rgba(255, 255, 255, var(--grid-opacity));
+
+        background: linear-gradient(to right,
+                transparent 33.333%,
+                rgba(255, 255, 255, var(--grid-opacity)) 33.333% calc(33.333% + 1px),
+                transparent calc(33.333% + 1px));
+
+        mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 28%;
+        bottom: 0;
+        left: var(--side-padding);
+        right: var(--side-padding);
+        pointer-events: none;
+
+
+        background: linear-gradient(to right,
+                transparent 66.666%,
+                rgba(255, 255, 255, var(--grid-opacity)) 66.666% calc(66.666% + 1px),
+                transparent calc(66.666% + 1px));
+
+        mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
+    }
+
+    @include m.respond(tablet) {
+        &::after {
+            background:
+                linear-gradient(to right,
+                    transparent 50%,
+                    rgba(255, 255, 255, var(--grid-opacity)) 50% calc(50% + 1px),
+                    transparent calc(50% + 1px));
+        }
+
+    }
+
+    @include m.respond(mobile) {
+        &::after {
+            background: none
+        }
+
+    }
+}
