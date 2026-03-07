@@ -1,0 +1,157 @@
+@use "mixins" as m;
+.coin-belt {
+  position: relative;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+
+  &__viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__track {
+    width: 100%;
+    
+    // background-color: red;
+    
+  }
+
+  &__text {
+    @include m.flex(center, center, column);
+    color: #fff;
+
+    .coin-header {
+      font-size: 2.5rem;
+    } 
+    .coin-paragraf {
+      font-size: 1.1rem;
+    }
+  }
+  &__fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10rem;
+    z-index: 2;
+    pointer-events: none;
+
+    &--left {
+      left: 0;
+      background: linear-gradient(90deg, #000000 0%, rgb(0, 0, 0, 0) 100%);
+    }
+
+    &--right {
+      right: 0;
+      background: linear-gradient(270deg, #000000 0%, rgb(0, 0, 0, 0) 100%);
+    }
+  }
+}
+
+.tier {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  width: max-content;
+  animation: coin-belt-scroll 30s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.coin-card {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  min-width: 16rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.168627451);
+  // background: rgba(17, 14, 31, 0.88);
+  // box-shadow:
+  //   inset 0 1px 0 rgba(255, 255, 255, 0.03),
+  //   0 0 0 1px rgba(255, 255, 255, 0.015);
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__body {
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  &__top,
+  &__bottom {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    color: #f5f7ff;
+    font-size: 1.05rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  &__ticker {
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 0.95rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  &__price {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.95rem;
+    line-height: 1.1;
+  }
+
+  &__change {
+    font-size: 0.95rem;
+    line-height: 1.1;
+
+    &--up {
+      color: #2fe38a;
+    }
+
+    &--down {
+      color: #ff5b6f;
+    }
+  }
+}
+
+@keyframes coin-belt-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+@media (max-width: 768px) {
+  .coin-card {
+    min-width: 13.5rem;
+    padding: 0.85rem 0.9rem;
+
+    &__name,
+    &__ticker,
+    &__price,
+    &__change {
+      font-size: 0.9rem;
+    }
+  }
+
+  .coin-belt__fade {
+    width: 4rem;
+  }
+}

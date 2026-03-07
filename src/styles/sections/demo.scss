@@ -1,0 +1,84 @@
+@use "mixins" as m;
+
+.demonstration {
+    position: relative;
+    padding-top: 10rem;
+    &__inner {
+        @include m.flex(center, center, column);
+
+    }
+
+    &-video-ilistrution {
+        padding-top: 4rem;
+
+        video {
+            height: 50%;
+        }
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100vw;
+        height: 100%;
+        transform: translateX(-50%);
+
+        z-index: -1;
+        background: #000;
+    }
+}
+
+.demonstration-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+
+    // background-color: red; 
+    &__header {
+        font-size: 3.5rem;
+        line-height: 0;
+    }
+
+    &__pgon {
+        font-size: 1.1rem;
+        font-family: sans-serif;
+    }
+
+    &__pgtw {
+        font-size: 1.1rem;
+        font-family: sans-serif;
+    }
+
+    &__button {
+        width: inherit;
+        border-top: 1px solid rgba(255, 255, 255, 0.168627451);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.168627451);
+        padding: 1rem 0;
+        margin-top: .7rem;
+
+    }
+}
+
+.button-demo {
+    @include m.flex(space-between, center, row);
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0 2rem;
+
+    &__text {
+        font-family: monospace, "Inter", sans-serif;
+        color: #fff;
+        font-size: .95rem;
+    }
+
+    &__icon {
+        height: 13px;
+        stroke: #fff;
+
+    }
+}
