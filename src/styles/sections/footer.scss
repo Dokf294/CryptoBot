@@ -1,0 +1,176 @@
+@use "mixins" as m;
+
+.footer {
+  color: #fff;
+  padding-bottom: 5rem;
+  font-family: "Inter", sans-serif;
+  &__top,
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  &__bottom {
+    padding-top: 2rem;
+  }
+
+  &__intro {
+    padding-left: 1.5rem;
+  }
+
+  &__title {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2.2rem, 3vw, 3.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    
+    
+  }
+
+  &__text {
+    margin: 0 0 1.4rem;
+    max-width: 38rem;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+  &__col {
+    min-width: 0;
+  }
+
+  &__label {
+    margin: 0 0 3.8rem;
+    font-size: 0.78rem;
+    line-height: 1;
+    letter-spacing: 0.35em;
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.15rem;
+      line-height: 1.25;
+      width: fit-content;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    padding: 0 .8rem;
+    gap: 1rem;
+    min-height: 3.8rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    
+    input {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    button {
+      border: 0;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 1.7rem;
+      cursor: pointer;
+      padding: 0;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+}
+
+@include m.respond(tablet) {
+  .footer {
+    &__top,
+    &__bottom {
+      grid-template-columns: repeat(2, minmax(0, 2fr));
+    }
+
+    &__top {
+      min-height: auto;
+      row-gap: 2rem;
+      padding-top: 3.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    &__intro {
+      grid-column: 1 / -1;
+      padding-right: 0;
+    }
+
+    &__empty {
+      display: none;
+    }
+
+    &__bottom {
+      row-gap: 3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 3rem;
+    &__top,
+    &__bottom {
+      grid-template-columns: 1fr;
+    }
+
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+      padding-right: 2rem;
+    }
+
+    &__text,
+    &__nav a {
+      font-size: .8rem;
+      text-align: center;
+      max-width: none;
+      padding-right: 2rem;
+    }
+
+    &__label {
+      margin-bottom: 2rem;
+    }
+
+    &__bottom {
+      row-gap: 2.4rem;
+    }
+  }
+}

@@ -4,12 +4,13 @@
 @use "utils/base";
 
 @use "components/video";
+@use "components/line"; 
 
 @use "sections/header";
 @use "sections/initialize";
-@use "sections/criptocell"; 
 @use "sections/showapp"; 
 @use "sections/case";
 @use "sections/demo";
 @use "sections/conveer"; 
-@use "sections/dev";
+@use "sections/dev"; 
+@use "sections/footer";

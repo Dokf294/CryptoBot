@@ -3,6 +3,8 @@
 .demonstration {
     position: relative;
     padding-top: 10rem;
+    padding-bottom: clamp(5rem, 18vw, 15rem);
+
     &__inner {
         @include m.flex(center, center, column);
 
@@ -10,9 +12,12 @@
 
     &-video-ilistrution {
         padding-top: 4rem;
+        z-index: 1;
+        height: clamp(15rem, 48vw, 40rem);
 
         video {
-            height: 50%;
+            height: 100%;
+
         }
     }
 
@@ -32,24 +37,24 @@
 .demonstration-text {
     display: flex;
     flex-direction: column;
+    
     gap: 1rem;
     width: 50%;
     font-family: "Inter", sans-serif;
     color: #fff;
 
-    // background-color: red; 
     &__header {
-        font-size: 3.5rem;
-        line-height: 0;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        text-align: center;
     }
 
     &__pgon {
-        font-size: 1.1rem;
+        font-size: clamp(.8rem, 2vw, 1.1rem);
         font-family: sans-serif;
     }
 
     &__pgtw {
-        font-size: 1.1rem;
+        font-size: clamp(.8rem, 2vw, 1.1rem);
         font-family: sans-serif;
     }
 
@@ -57,28 +62,100 @@
         width: inherit;
         border-top: 1px solid rgba(255, 255, 255, 0.168627451);
         border-bottom: 1px solid rgba(255, 255, 255, 0.168627451);
-        padding: 1rem 0;
+        
         margin-top: .7rem;
-
+        overflow: hidden;
+            
     }
 }
 
 .button-demo {
-    @include m.flex(space-between, center, row);
-    background-color: transparent;
+    position: relative;
     border: none;
+    background-color: transparent;
     width: 100%;
-    padding: 0 2rem;
+    height: 100%;
+    &-first-block, &-last-block {
+        @include m.flex(space-between, center, row);
+        
+        padding: 1rem 0;  
+        
+        width: 100%;
 
-    &__text {
-        font-family: monospace, "Inter", sans-serif;
-        color: #fff;
-        font-size: .95rem;
+        .button-demo__text {
+            font-family: monospace, "Inter", sans-serif;
+            color: #fff;
+            font-size: .95rem;
+            padding-left: 1rem;
+        }
+
+        .button-demo__icon {
+            height: 13px;
+            stroke: #fff;
+            padding-right: 1rem;
+
+            .upper__icon {
+                fill: #fff;
+            }
+        }
     }
 
-    &__icon {
-        height: 13px;
-        stroke: #fff;
+    &-last-block {
+        position: absolute;
+        inset: 0;
+        transform: translateY(200%) rotateZ(10deg);
+        transform-origin: bottom center;
+        transition: transform 1s cubic-bezier(.26, 1, .26, 1);
+        border: none;
+        background-color: #fff;
+        .button-demo__text {
+            
+            color: #000;
+            
+        }
 
+        .button-demo__icon {
+            
+            stroke: #000;
+            
+        }
+    }
+
+
+    &:hover &-last-block {
+        transform: translateY(0) rotateZ(0deg);
+    }
+}
+
+@include m.respond(tablet) {
+    .demonstration {
+
+        &-text__header {
+            line-height: 1;
+            text-align: center;
+        }
+
+        &-text__pgon {
+            text-align: center;
+        }
+
+        &-text__pgtw {
+            text-align: center;
+        }
+
+        &-text {
+            @include m.flex(center, center, column);
+        }
+
+        &-text__button {
+            width: 200%;
+        }
+    }
+
+}
+
+@include m.respond(mobile) {
+    .demonstration {
+        padding-top: 5rem;
     }
 }

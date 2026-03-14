@@ -124,3 +124,9 @@
     display: none;
   }
 }
+
+@include m.respond(custom, 499px) {
+  .topbar__gh {
+    display: none;
+  }
+}

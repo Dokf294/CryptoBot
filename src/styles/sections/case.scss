@@ -1,16 +1,18 @@
 @use "mixins" as m;
+
 .case {
+
   color: #fff;
   font-family: "Inter", sans-serif;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; 
+
 }
 
 .case__inner {
-  
+
   width: 100%;
   margin: 0 auto;
   padding: clamp(24px, 4vw, 56px) 0;
-  //background-color: #fff;
 }
 
 
@@ -20,8 +22,7 @@
 }
 
 .case-hero__grid {
-    @include m.flex(center, center, column);
-    // background-color: red;
+  @include m.flex(center, center, column);
 }
 
 .case-hero__left {
@@ -30,15 +31,15 @@
 
 .case-hero__content {
   width: 50%;
-  
+
 }
 
 .case-hero__title {
   margin: 0 0 18px;
   font-weight: 700;
   line-height: 1.02;
-  letter-spacing: -0.02em;
   font-size: clamp(24px, 2.6vw, 56px);
+  text-wrap: balance
 }
 
 .case-hero__lead {
@@ -56,7 +57,7 @@
 }
 
 .case-challenge {
-  padding-top: clamp(36px, 6vw, 80px);
+  padding-top: clamp(16px, 4vw, 80px);
   padding-bottom: clamp(56px, 8vw, 110px);
 }
 
@@ -79,8 +80,9 @@
 
 .case-challenge__title {
   margin: 0 0 14px;
-  font-size: clamp(30px, 3.2vw, 50px);
-  text-wrap: nowrap;
+  font-size: clamp(20px, 3.2vw, 50px);
+
+
   line-height: 1.06;
   letter-spacing: -0.02em;
 }
@@ -88,14 +90,15 @@
 .case-challenge__desc {
   margin: 0;
   max-width: 560px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.75;
   opacity: 0.85;
+  
 }
 
-.case-challenge__grid:first-child .case-challenge__cards  {
-  margin-left: 10px;  
-} 
+.case-challenge__grid:first-child .case-challenge__cards {
+  margin-left: 5px;
+}
 
 .case-challenge__cards {
   display: grid;
@@ -119,22 +122,13 @@
 
 .case-card__text {
   margin: 0;
+  // font-family: sans-serif;
   font-size: 13.5px;
   line-height: 1.75;
   opacity: 0.85;
 }
 
-.case-card__link {
-  color: #48b0ff;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-
-@media (max-width: 1024px) {
+@include m.respond(tablet) {
   .case-hero__grid {
     grid-template-columns: 1fr;
   }
@@ -148,15 +142,61 @@
   }
 }
 
-@media (max-width: 560px) {
-  .case-challenge__cards {
-    grid-template-columns: 1fr;
+@include m.respond(mobile) {
+  .case-challenge {
+    // padding-right: 1rem;
   }
 
-  .case-hero__text,
+  .case-challenge__cards {
+    grid-template-columns: 1fr;
+
+  }
+
+
   .case-hero__lead,
-  .case-challenge__desc,
+  .case-hero__text {
+    font-size: clamp(8px, 15vw, 15px);
+    text-align: center;
+  }
+
+  .case-hero__title {
+    font-size: clamp(18px, 4vw, 30px);
+    text-align: center;
+  }
+
+
+  .case-card {
+    @include m.flex(center, center, column)
+  }
+
+  .case-card__title {
+    font-size: clamp(20px, 3vw, 30px);
+
+  }
+
+  .case-challenge__desc {
+    
+    max-width: clamp(260px, 70vw, 560px);
+    font-size: clamp(10px, 3vw, 15px);
+  }
+
   .case-card__text {
-    font-size: 13px;
+    font-size: clamp(10px, 3vw, 15px);
+    max-width: clamp(260px, 70vw, 560px);
+
+  }
+
+  .case-challenge__intro {
+    max-width: none;
+    @include m.flex(center, center, column)
+  }
+
+  .case-challenge {
+    text-align: center;
+
+    &__title {
+      font-size: 20px;
+
+    }
   }
 }

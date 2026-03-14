@@ -5,18 +5,26 @@
     transform: translate(-50%, -50%);
 }
 
-@mixin respond($breakpoint) {
-    @if $breakpoint ==tablet {
-        @media (max-width: 1178px) {
-            @content;
-        }
-    }
+@mixin respond($breakpoint, $custom: 0px) {
 
-    @if $breakpoint ==mobile {
-        @media (max-width: 768px) {
-            @content;
-        }
+  @if $breakpoint == tablet {
+    @media (max-width: 1178px) {
+      @content;
     }
+  }
+
+  @else if $breakpoint == mobile {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == custom {
+    @media (max-width: $custom) {
+      @content;
+    }
+  }
+
 }
 
 @mixin flex($justify: center, $align: center, $direction: row) {
@@ -24,4 +32,45 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin set-upop-anim($height) {
+  transition: transform .6s ease-in, opacity .6s ease-in;
+
+  transform: translateY(-$height);
+  opacity: 0;
+}
+
+@mixin push-upop-anim {
+  transform: translateY(0);
+  opacity: 1;
+} 
+
+@mixin set-blop-anim {
+  transition:
+    opacity .8s ease,
+    filter .8s ease;
+
+  opacity: 0;
+  filter: blur(10px);
+}
+
+@mixin push-blop-anim {
+  opacity: 1;
+  filter: blur(0);
+}
+
+@mixin set-word-reveal-anim {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(8px);
+  
+  transition:
+    opacity .7s ease,
+    filter .7s ease,
+}
+
+@mixin push-word-reveal-anim {
+  opacity: 1;
+  filter: blur(0);
 }
