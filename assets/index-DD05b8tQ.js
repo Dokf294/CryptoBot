@@ -92,7 +92,7 @@
   </div>
   <div class="initialize-footage">
     <div class="footage-app">
-      <img src="/added/app.png" alt="" class="set-anim-type1 anim">
+      <img src="./added/app.png" alt="" class="set-anim-type1 anim">
     </div>
     <div class="footage-advantage">
       <div class="footage-pad">
