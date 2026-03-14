@@ -1,0 +1,14 @@
+Copyright (c) 2026 Dokf294
+
+Permission is granted to view and study the source code of this project for educational purposes only.
+
+You are NOT allowed to:
+- copy the source code
+- redistribute the source code
+- use the source code in your own projects
+- publish modified versions of the source code
+- sell or distribute this code in any form
+
+This project is provided strictly for learning and inspiration.
+
+All rights reserved.
