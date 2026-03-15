@@ -97,18 +97,18 @@
     <div class="footage-advantage">
       <div class="footage-pad">
         <div class="advantage-block">
-          <img src="./public/assets/icons_block/money.png" alt="" loading="lazy" class="block-image">
+          <img src="./assets/icons_block/money.png" alt="" loading="lazy" class="block-image">
           <p class="block-uppertext">Price</p>
           <p class="block-upperlower">Very low price with huge profit and minimal involvement</p>
         </div>
         <div class="advantage-block">
-          <img src="./public/assets/icons_block/top.png" alt="" loading="lazy" class="block-image">
+          <img src="./assets/icons_block/top.png" alt="" loading="lazy" class="block-image">
           <p class="block-uppertext">Payback period</p>
           <p class="block-upperlower">Tests show that for just $15, the return on investment is 1785% in 3 months
           </p>
         </div>
         <div class="advantage-block">
-          <img src="./public/assets/icons_block/bolt.svg" alt="" loading="lazy" class="block-image">
+          <img src="./assets/icons_block/bolt.svg" alt="" loading="lazy" class="block-image">
           <p class="block-uppertext">Simplicity</p>
           <p class="block-upperlower">Watch your capital grow without distracting you from your main tasks</p>
         </div>
