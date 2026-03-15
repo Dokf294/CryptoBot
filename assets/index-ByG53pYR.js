@@ -1,7 +1,7 @@
 (function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))c(a);new MutationObserver(a=>{for(const s of a)if(s.type==="childList")for(const e of s.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&c(e)}).observe(document,{childList:!0,subtree:!0});function i(a){const s={};return a.integrity&&(s.integrity=a.integrity),a.referrerPolicy&&(s.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?s.credentials="include":a.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function c(a){if(a.ep)return;a.ep=!0;const s=i(a);fetch(a.href,s)}})();const f=`<header class="topbar">
   <div class="topbar__inner">
     <a class="topbar__brand" href="#" aria-label="Home">
-      <img src="/assets/logo.png" alt="Logo" />
+      <img src="./assets/logo.png" alt="Logo" />
     </a>
 
     <nav class="topbar__nav" aria-label="Primary">
@@ -121,11 +121,11 @@
     Now CryptoBot lets you earn money not only at your computer, but also directly from your phone
   </p>
   <div class="viewapp__canvas">
-    <img src="/assets/art/ph-bl-ontw.png" alt="" loading="lazy" class="set-anim-type1 anim-two">
-    <img src="/assets/art/ph-bl-twtw.png" alt="" loading="lazy" class="set-anim-type1 anim-two">
-    <img src="/assets/art/ph-bl-thtw.png" alt="" loading="lazy" class="set-anim-type1 anim-two">
+    <img src="./assets/art/ph-bl-ontw.png" alt="" loading="lazy" class="set-anim-type1 anim-two">
+    <img src="./assets/art/ph-bl-twtw.png" alt="" loading="lazy" class="set-anim-type1 anim-two">
+    <img src="./assets/art/ph-bl-thtw.png" alt="" loading="lazy" class="set-anim-type1 anim-two">
   </div>
-  <img src="/assets/art/" alt="" loading="lazy">
+  <img src="./assets/art/" alt="" loading="lazy">
 </section>
 <section class="case">
   <div class="case__inner">
@@ -219,7 +219,7 @@
       <div class="tier" style="--tm-cv: 30s">
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -233,7 +233,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Internet Computer</span>
@@ -247,7 +247,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -261,7 +261,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">bch</span>
@@ -275,7 +275,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -289,7 +289,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">fil USD</span>
@@ -303,7 +303,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">algo Token</span>
@@ -317,7 +317,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -331,7 +331,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Sol</span>
@@ -345,7 +345,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -359,7 +359,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -373,7 +373,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">shibo</span>
@@ -388,7 +388,7 @@
       </div>
       <div class="tier" style="--tm-cv: 26s">
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -402,7 +402,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Internet Computer</span>
@@ -416,7 +416,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -430,7 +430,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">bch</span>
@@ -444,7 +444,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -458,7 +458,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">fil USD</span>
@@ -472,7 +472,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">algo Token</span>
@@ -486,7 +486,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -500,7 +500,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Sol</span>
@@ -514,7 +514,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -528,7 +528,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -542,7 +542,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">shibo</span>
@@ -557,7 +557,7 @@
       </div>
       <div class="tier" style="--tm-cv: 28s">
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -571,7 +571,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Internet Computer</span>
@@ -585,7 +585,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -599,7 +599,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">bch</span>
@@ -613,7 +613,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -627,7 +627,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">fil USD</span>
@@ -641,7 +641,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">algo Token</span>
@@ -655,7 +655,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -669,7 +669,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Sol</span>
@@ -683,7 +683,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -697,7 +697,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -711,7 +711,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">shibo</span>
@@ -726,7 +726,7 @@
       </div>
       <div class="tier" style="--tm-cv: 24s">
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="Pepe" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -740,7 +740,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_matic.webp" alt="Internet Computer" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Internet Computer</span>
@@ -754,7 +754,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="Ethereum Classic" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -768,7 +768,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_bch.webp" alt="bch" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">bch</span>
@@ -782,7 +782,7 @@
         </article>
 
         <article class="coin-card">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="ada" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -796,7 +796,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_fil.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">fil USD</span>
@@ -810,7 +810,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_algo.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">algo Token</span>
@@ -824,7 +824,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_pepe.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Pepe</span>
@@ -838,7 +838,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_sol.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Sol</span>
@@ -852,7 +852,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_eth.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">Ethereum Classic</span>
@@ -866,7 +866,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_ada.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">ada</span>
@@ -880,7 +880,7 @@
         </article>
 
         <article class="coin-card" aria-hidden="true">
-          <img src="/assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
+          <img src="./assets/icons_crypto/s_shib.webp" alt="" class="coin-card__icon" />
           <div class="coin-card__body">
             <div class="coin-card__top">
               <span class="coin-card__name">shibo</span>
@@ -927,7 +927,7 @@
       </div>
     </div>
     <div class="demonstration-video-ilistrution">
-      <video src="/assets/video/ilistrution_cubizm.webm" autoplay muted loop playsinline preload="auto"></video>
+      <video src="./assets/video/ilistrution_cubizm.webm" autoplay muted loop playsinline preload="auto"></video>
     </div>
     <div class="demonstration-bg"></div>
   </div>
@@ -1090,7 +1090,7 @@
 </footer>
 <div class="video">
   <div class="video__frame">
-    <video id="bgVideo" src="/assets/video/videobg.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <video id="bgVideo" src="./assets/video/videobg.mp4" autoplay muted loop playsinline preload="auto"></video>
   </div>
 </div>
 <div class="lines"></div>`;document.querySelector("#layout").innerHTML=f;const u=document.getElementById("bgVideo");u.addEventListener("loadedmetadata",()=>{u.playbackRate=.6});const _=document.querySelector(".js-devs-slider"),p=document.querySelector(".js-devs-track"),v=document.querySelector(".js-devs-prev"),h=document.querySelector(".js-devs-next");if(_&&p&&v&&h){const t=Array.from(p.children);let n=0;const i=()=>window.innerWidth<=768?1:2,c=()=>Math.max(0,t.length-i()),a=()=>{const o=t[0];if(!o)return;const d=o.offsetWidth;p.style.transform=`translate3d(-${d*n}px, 0, 0)`,v.disabled=n<=0,h.disabled=n>=c()};v.addEventListener("click",()=>{n=Math.max(0,n-1),a()}),h.addEventListener("click",()=>{n=Math.min(c(),n+1),a()});let s=0,e=0;_.addEventListener("touchstart",o=>{s=o.changedTouches[0].clientX}),_.addEventListener("touchend",o=>{e=o.changedTouches[0].clientX;const d=s-e;Math.abs(d)<40||(d>0?n=Math.min(c(),n+1):n=Math.max(0,n-1),a())}),window.addEventListener("resize",()=>{n=Math.min(n,c()),a()}),a()}class w{constructor(n){this.observers=[],this.items=n.items}normalizeClasses(n){return n?(Array.isArray(n)?n:[n]).map(c=>c.trim()).filter(Boolean):[]}init(){this.items.forEach(n=>{const{selector:i,threshold:c=.15,rootMargin:a="0px 0px -10% 0px",once:s=!0}=n,e=this.normalizeClasses(n.addClass),o=this.normalizeClasses(n.removeClass),d=document.querySelectorAll(i);if(!d.length)return;const m=new IntersectionObserver((l,y)=>{l.forEach(g=>{const r=g.target;if(g.isIntersecting){const b=r.dataset.delay;b&&(r.style.transitionDelay=`${b}ms`),o.length&&r.classList.remove(...o),e.length&&r.classList.add(...e),s&&y.unobserve(r)}else s||(e.length&&r.classList.remove(...e),o.length&&r.classList.add(...o),r.style.transitionDelay="")})},{threshold:c,rootMargin:a});d.forEach(l=>{o.length&&l.classList.add(...o),m.observe(l)}),this.observers.push(m)})}destroy(){this.observers.forEach(n=>n.disconnect()),this.observers=[]}}function k(t){document.querySelectorAll(t).forEach(i=>{const c=i.textContent;if(!c)return;const a=c.trim().split(/\s+/);i.innerHTML=a.map((s,e)=>`<span class="word" style="transition-delay: ${e*120}ms">${s}</span>`).join(" ")})}class C{constructor(n){this.items=n.items}normalizeClasses(n){return(Array.isArray(n)?n:[n]).map(c=>c.trim()).filter(Boolean)}buildSelector(n,i){return i?n.map(c=>`${i} ${c}`).join(", "):n.join(", ")}init(){this.items.forEach(n=>{const i=this.normalizeClasses(n.addClass),c=this.buildSelector(n.tags,n.parent),a=document.querySelectorAll(c);a.length&&a.forEach(s=>{n.exclude&&s.matches(n.exclude)||s.classList.add(...i)})})}}const S=new C({items:[{parent:".case__inner",tags:["h1","h2","p","h3"],addClass:"set-anim-type2"}]}),D=new w({items:[{selector:".anim",addClass:"push-anim-type1",removeClass:"",once:!0},{selector:".anim-two",addClass:"push-anim-type1",removeClass:"",once:!0},{selector:".case p, .case h3, .case h1, .case h2",addClass:"push-anim-type2",removeClass:"",once:!0},{selector:".demonstration-text__header",addClass:"push-anim-type2",removeClass:"",once:!0},{selector:".demonstration-text > p span",addClass:"push-anim-type3",removeClass:"",once:!0},{selector:".devs__title, .dev-card__name",addClass:"push-anim-type2",removeClass:"",once:!0},{selector:".dev-card__content > p span",addClass:"push-anim-type3",removeClass:"",once:!0},{selector:".footer__title",addClass:"push-anim-type2",removeClass:"",once:!0},{selector:".footer__text span",addClass:"push-anim-type3",removeClass:"",once:!0}]});S.init();k("[split-words]");D.init();
