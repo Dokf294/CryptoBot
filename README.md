@@ -23,7 +23,7 @@ Hi, this is the website I created for my portfolio.
 
 ## 🚀 Live Demo
 > Add your link here  
-- **Website:** https://dokf294.github.io/portfolio/
+- **Website:** https://dokf294.github.io/CryptoBot/
 
 ---
 
